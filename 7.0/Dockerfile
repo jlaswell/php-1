@@ -4,8 +4,6 @@ LABEL version="1.0.0-beta" \
       com.realpage.php.version="7.0.4" \
       com.realpage.php.type="cli"
 
-WORKDIR /var/www
-
 # install extensions
 RUN apt-get update && apt-get install -y libmcrypt-dev libpq5 libpq-dev \
     && docker-php-ext-install mcrypt mbstring pgsql pdo_pgsql \
