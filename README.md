@@ -2,8 +2,8 @@
 
 
 ## Supported tags
-- [`7.0.4-cli`, `7.0-cli`, `7-cli`, `cli`, `7.0.4`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://github.com/realpage/php/tree/v1.0.0-beta/7.0/Dockerfile)
-- [`7.0.4-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://github.com/realpage/php/tree/v1.0.0-beta/7.0/fpm/Dockerfile)
+- [`7.0.4-cli`, `7.0-cli`, `7-cli`, `cli`, `7.0.4`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://hub.docker.com/r/realpage/php/)
+- [`7.0.4-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://hub.docker.com/r/realpage/php/)
 
 ## How this image is used
 This image is used alongside the official [Laravel](https://github.com/RealPage/laravel.git) and [Lumen](https://github.com/RealPage/lumen.git) starter projects. It comes packaged with the requirements for Laravel and Lumen to run along with any required Postgres extensions.
