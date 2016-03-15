@@ -7,5 +7,4 @@ LABEL version="1.0.0-beta" \
 # install extensions
 RUN apt-get update && apt-get install -y libmcrypt-dev libpq5 libpq-dev \
     && docker-php-ext-install mcrypt mbstring pgsql pdo_pgsql \
-    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-    && rm -r /var/www/html
+    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

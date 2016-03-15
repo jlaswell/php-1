@@ -1,4 +1,5 @@
-# RealPage Official Docker Image for PHP
+# RealPage Official Docker Image for PHP [![Build Status](https://travis-ci.org/Realpage/php.svg?branch=master)](https://travis-ci.org/Realpage/php)
+
 
 ## Supported tags
 - [`7.0.4-cli`, `7.0-cli`, `7-cli`, `cli`, `7.0.4`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://github.com/realpage/php/tree/v1.0.0-beta/7.0/Dockerfile)
