@@ -1,5 +1,5 @@
 FROM php:7.0.4-fpm
-MAINTAINER RealPage DevOps Foundation-Devops@RealPage.com
+MAINTAINER RealPage DevOps foundation-devops@indatus.com
 LABEL version="1.0.0-beta" \
       com.realpage.php.version="7.0.4" \
       com.realpage.php.type="fpm"
