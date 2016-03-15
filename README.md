@@ -6,7 +6,7 @@
 - [`7.0.4-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://github.com/realpage/php/tree/v1.0.0-beta/7.0/fpm/Dockerfile)
 
 ## How this image is used
-This image is used alongside the official [Laravel](https://github.com/RealPage/laravel.git) and [Lumen](https://github.com/RealPage/laravel.git) starter projects. It comes packaged with the requirements for Laravel and Lumen to run along with any required Postgres extensions.
+This image is used alongside the official [Laravel](https://github.com/RealPage/laravel.git) and [Lumen](https://github.com/RealPage/lumen.git) starter projects. It comes packaged with the requirements for Laravel and Lumen to run along with any required Postgres extensions.
 
 ## FAQs
 - We need an extension that isn't included in this image? How do I get an image with the extension I need?
