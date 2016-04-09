@@ -1,8 +1,8 @@
-FROM php:7.0.4-cli
-MAINTAINER RealPage DevOps foundation-devops@indatus.com
+FROM php:7.0.5-cli
+MAINTAINER Foundation DevOps foundation-devops@realpage.com
 LABEL version="1.0.0-beta" \
       com.realpage.composer.version="1.0.0" \
-      com.realpage.php.version="7.0.4" \
+      com.realpage.php.version="7.0.5" \
       com.realpage.php.type="cli"
 
 # Locally docker mounts files as user 1000

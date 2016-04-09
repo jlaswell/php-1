@@ -1,9 +1,9 @@
-# RealPage Official Docker Image for PHP [![Build Status](https://travis-ci.org/Realpage/php.svg?branch=master)](https://travis-ci.org/Realpage/php)
+# RealPage Official Docker Image for PHP [![Build Status](https://travis-ci.org/realpage/php.svg?branch=master)](https://travis-ci.org/realpage/php)
 
 
 ## Supported tags
-- [`7.0.4-cli`, `7.0-cli`, `7-cli`, `cli`, `7.0.4`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://hub.docker.com/r/realpage/php/)
-- [`7.0.4-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://hub.docker.com/r/realpage/php/)
+- [`7.0.5-cli`, `7.0-cli`, `7-cli`, `cli`, `7.0.5`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://hub.docker.com/r/realpage/php/)
+- [`7.0.5-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://hub.docker.com/r/realpage/php/)
 
 ## How this image is used
 This image is used alongside the official [Laravel](https://github.com/RealPage/laravel.git) and [Lumen](https://github.com/RealPage/lumen.git) starter projects. It comes packaged with the requirements for Laravel and Lumen to run along with any required Postgres extensions.
