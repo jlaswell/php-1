@@ -2,7 +2,7 @@
 
 
 ## Supported tags
-- [`7.0.5-cli`, `7.0-cli`, `7-cli`, `cli`, `7.0.5`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://hub.docker.com/r/realpage/php/)
+- [`7.0.5-cli`, `7.0-cli`, `7-cli`, `cli` (*7.0/Dockerfile*)](https://hub.docker.com/r/realpage/php/)
 - [`7.0.5-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://hub.docker.com/r/realpage/php/)
 
 ## How this image is used
