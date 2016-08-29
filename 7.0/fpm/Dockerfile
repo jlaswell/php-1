@@ -1,8 +1,5 @@
-FROM php:7.0.5-fpm
+FROM php:7.0.10-fpm
 MAINTAINER Foundation DevOps foundation-devops@realpage.com
-LABEL version="1.0.0-beta" \
-      com.realpage.php.version="7.0.5" \
-      com.realpage.php.type="fpm"
 
 # Locally docker mounts files as user 1000
 # Adding this user to www-data allows php

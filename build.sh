@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 repository="realpage/php"
-cli=( "7.0.5-cli" "7.0-cli" "7-cli" "cli" )
+cli=( "7.0.10-cli" "7.0-cli" "7-cli" "cli" )
 tagscli=""
-fpm=( "7.0.5-fpm" "7.0-fpm" "7-fpm" "fpm" )
+fpm=( "7.0.10-fpm" "7.0-fpm" "7-fpm" "fpm" )
 tagsfpm=""
-alpine=( "7.0.5-alpine" "7.0-alpine" "7-alpine" "alpine" )
+alpine=( "7.0.10-alpine" "7.0-alpine" "7-alpine" "alpine" )
 tagsapline=""
-fpmalpine=( "7.0.5-fpm-alpine" "7.0-fpm-alpine" "7-fpm-alpine" "fpm-alpine" )
+fpmalpine=( "7.0.10-fpm-alpine" "7.0-fpm-alpine" "7-fpm-alpine" "fpm-alpine" )
 tagsfpmapline=""
 
 echo "Building tags for cli images"
