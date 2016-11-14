@@ -14,7 +14,7 @@ script:
   - ~/official-images/test/run.sh "$image"
   - docker images
   # build and push all variations of images
-  - if [[ $TRAVIS_PULL_REQUEST_BRANCH == '' && $TRAVIS_BRANCH == 'master' ]]; then cd ../ && bash build.sh ; fi
+  - if [[ $TRAVIS_PULL_REQUEST = false && $TRAVIS_BRANCH == 'master' ]]; then bash build.sh ; fi
 notifications:
   slack:
     secure: ${SLACK_TOKEN}
