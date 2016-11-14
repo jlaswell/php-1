@@ -12,3 +12,5 @@ RUN apk add --update --no-cache \
     pdo_pgsql \
     pgsql \
 
+    # needed for forking processes in laravel queues as of Laravel 5.3
+    pcntl
