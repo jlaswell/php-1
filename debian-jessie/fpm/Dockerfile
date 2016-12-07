@@ -1,4 +1,4 @@
-FROM php:7.0.10-fpm
+FROM php:7.1.0-fpm
 MAINTAINER Foundation DevOps foundation-devops@realpage.com
 
 # Locally docker mounts files as user 1000

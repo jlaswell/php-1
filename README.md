@@ -4,14 +4,14 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/realpage/php.svg)](https://hub.docker.com/r/realpage/php)
 
 ## Supported tags
-- [`7.0.10-cli`, `7.0-cli`, `7-cli`, `cli` (*7.0/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
-[![Image Layers](https://img.shields.io/imagelayers/layers/realpage/php/7.0-cli.svg)](https://imagelayers.io/?images=realpage/php:7.0-cli)
-- [`7.0.10-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
-[![Image Layers](https://img.shields.io/imagelayers/layers/realpage/php/7.0-fpm.svg)](https://imagelayers.io/?images=realpage/php:7.0-fpm)
-- [`7.0.10-alpine`, `7.0-alpine`, `7-alpine`, `alpine` (*7.0/alpine/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
-[![Image Layers](https://img.shields.io/imagelayers/layers/realpage/php/7.0-alpine.svg)](https://imagelayers.io/?images=realpage/php:7.0-alpine)
-- [`7.0.10-fpm-alpine`, `7.0-fpm-alpine`, `7-fpm-alpine`, `fpm-alpine` (*7.0/fpm/alpine/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
-[![Image Layers](https://img.shields.io/imagelayers/layers/realpage/php/7.0-fpm.svg)](https://imagelayers.io/?images=realpage/php:7.0-fpm-alpine)
+- [`7.1.0-cli`, `7.1-cli`, `7-cli`, `cli` (*debian-jessie/cli/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
+[![Image Layers](https://img.shields.io/imagelayers/layers/realpage/php/7.1-cli.svg)](https://imagelayers.io/?images=realpage/php:7.1-cli)
+- [`7.1.0-fpm`, `7.1-fpm`, `7-fpm`, `fpm` (*debian-jessie/fpm/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
+[![Image Layers](https://img.shields.io/imagelayers/layers/realpage/php/7.1-fpm.svg)](https://imagelayers.io/?images=realpage/php:7.1-fpm)
+- [`7.1.0-alpine`, `7.1-alpine`, `7-alpine`, `alpine` (*alpine/cli/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
+[![Image Layers](https://img.shields.io/imagelayers/layers/realpage/php/7.1-alpine.svg)](https://imagelayers.io/?images=realpage/php:7.1-alpine)
+- [`7.1.0-fpm-alpine`, `7.1-fpm-alpine`, `7-fpm-alpine`, `fpm-alpine` (*alpine/fpm/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
+[![Image Layers](https://img.shields.io/imagelayers/layers/realpage/php/7.1-fpm-alpine.svg)](https://imagelayers.io/?images=realpage/php:7.1-fpm-alpine)
 
 ## FAQs
 

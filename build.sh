@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 repository="realpage/php"
-cli=( "7.0.10-cli" "7.0-cli" "7-cli" "cli" )
+cli=( "7.1.0-cli" "7.1-cli" "7-cli" "cli" )
 tagscli=""
-fpm=( "7.0.10-fpm" "7.0-fpm" "7-fpm" "fpm" )
+fpm=( "7.1.0-fpm" "7.1-fpm" "7-fpm" "fpm" )
 tagsfpm=""
-alpine=( "7.0.10-alpine" "7.0-alpine" "7-alpine" "alpine" )
+alpine=( "7.1.0-alpine" "7.1-alpine" "7-alpine" "alpine" )
 tagsapline=""
-fpmalpine=( "7.0.10-fpm-alpine" "7.0-fpm-alpine" "7-fpm-alpine" "fpm-alpine" )
+fpmalpine=( "7.1.0-fpm-alpine" "7.1-fpm-alpine" "7-fpm-alpine" "fpm-alpine" )
 tagsfpmapline=""
 
 echo "Building tags for cli images"
@@ -16,7 +16,7 @@ for version in "${cli[@]}"; do
 done
 
 echo "Building base cli images: ${tagscli}"
-docker build ${tagscli} -f 7.0/Dockerfile .
+docker build ${tagscli} -f debian-jessie/cli/Dockerfile .
 docker images
 
 echo "Building tags for fpm images"
@@ -25,7 +25,7 @@ for version in "${fpm[@]}"; do
 done
 
 echo "Building base fpm images: ${tagsfpm}"
-docker build ${tagsfpm} -f 7.0/fpm/Dockerfile .
+docker build ${tagsfpm} -f debian-jessie/fpm/Dockerfile .
 docker images
 
 echo "Building tags for alpine images"
@@ -34,7 +34,7 @@ for version in "${alpine[@]}"; do
 done
 
 echo "Building base alpine images: ${tagsalpine}"
-docker build ${tagsalpine} -f 7.0/alpine/Dockerfile .
+docker build ${tagsalpine} -f alpine/cli/Dockerfile .
 docker images
 
 echo "Building tags for fpm-alpine images"
@@ -43,7 +43,7 @@ for version in "${fpmalpine[@]}"; do
 done
 
 echo "Building base fpm-alpine images: ${tagsfpmalpine}"
-docker build ${tagsfpmalpine} -f 7.0/fpm/alpine/Dockerfile .
+docker build ${tagsfpmalpine} -f debian-jessie/fpm/alpine/Dockerfile .
 docker images
 
 echo "Pushing builds"

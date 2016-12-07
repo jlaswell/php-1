@@ -1,4 +1,4 @@
-FROM php:7.0.10-cli
+FROM php:7.1.0-cli
 MAINTAINER Foundation DevOps foundation-devops@realpage.com
 
 # Locally docker mounts files as user 1000
