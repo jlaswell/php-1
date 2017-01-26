@@ -7,7 +7,6 @@ RUN apk add --update --no-cache \
     "libpq>9.5" \
 && docker-php-ext-install \
     mbstring \
-    mcrypt \
     pdo \
     pdo_pgsql \
     pgsql \

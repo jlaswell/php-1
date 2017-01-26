@@ -43,7 +43,7 @@ for version in "${fpmalpine[@]}"; do
 done
 
 echo "Building base fpm-alpine images: ${tagsfpmalpine}"
-docker build ${tagsfpmalpine} -f debian-jessie/fpm/alpine/Dockerfile .
+docker build ${tagsfpmalpine} -f alpine/fpm/Dockerfile .
 docker images
 
 echo "Pushing builds"
