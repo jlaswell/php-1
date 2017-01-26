@@ -10,8 +10,6 @@ install:
 before_script:
   - docker -v
   - image="realpage/php:${DISTRO}${VARIANT:+-$VARIANT}"
-  - echo "${DISTRO}/${VARIANT:-.}"
-  - echo "${DISTRO}${VARIANT:+-$VARIANT}"
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 script:
   - docker build -t "$image" "${DISTRO}/${VARIANT:-.}"
