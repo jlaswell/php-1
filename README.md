@@ -4,13 +4,13 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/realpage/php.svg)](https://hub.docker.com/r/realpage/php)
 
 ## Supported tags
-- [`7.1.0-cli`, `7.1-cli`, `7-cli`, `cli` (*debian-jessie/cli/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
+- [`7.1.1-cli`, `7.1-cli`, `7-cli`, `cli` (*debian-jessie/cli/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
 [![Image Layers](https://img.shields.io/imagelayers/layers/realpage/php/7.1-cli.svg)](https://imagelayers.io/?images=realpage/php:7.1-cli)
-- [`7.1.0-fpm`, `7.1-fpm`, `7-fpm`, `fpm` (*debian-jessie/fpm/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
+- [`7.1.1-fpm`, `7.1-fpm`, `7-fpm`, `fpm` (*debian-jessie/fpm/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
 [![Image Layers](https://img.shields.io/imagelayers/layers/realpage/php/7.1-fpm.svg)](https://imagelayers.io/?images=realpage/php:7.1-fpm)
-- [`7.1.0-alpine`, `7.1-alpine`, `7-alpine`, `alpine` (*alpine/cli/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
+- [`7.1.1-alpine`, `7.1-alpine`, `7-alpine`, `alpine` (*alpine/cli/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
 [![Image Layers](https://img.shields.io/imagelayers/layers/realpage/php/7.1-alpine.svg)](https://imagelayers.io/?images=realpage/php:7.1-alpine)
-- [`7.1.0-fpm-alpine`, `7.1-fpm-alpine`, `7-fpm-alpine`, `fpm-alpine` (*alpine/fpm/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
+- [`7.1.1-fpm-alpine`, `7.1-fpm-alpine`, `7-fpm-alpine`, `fpm-alpine` (*alpine/fpm/Dockerfile*)](https://hub.docker.com/r/realpage/php/) 
 [![Image Layers](https://img.shields.io/imagelayers/layers/realpage/php/7.1-fpm-alpine.svg)](https://imagelayers.io/?images=realpage/php:7.1-fpm-alpine)
 
 ## FAQs
