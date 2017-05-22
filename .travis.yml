@@ -19,7 +19,7 @@ before_deploy:
  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 deploy:
  provider: script
- script: docker push "realpage/php:latest" && docker tag "realpage/php:latest" "realpage/php:${MAJOR}-${VARIANT}" && docker push "realpage/php:${MAJOR}-${VARIANT}" && docker tag "realpage/php:latest" "realpage/php:${MAJOR}.${MINOR}-${VARIANT}" && docker push "realpage/php:${MAJOR}.${MINOR}-${VARIANT}" && docker tag "realpage/php:latest" "realpage/php:${MAJOR}.${MINOR}.${PATCH}-${VARIANT}" && docker push "realpage/php:${MAJOR}.${MINOR}.${PATCH}-${VARIANT}"
+ script: docker push "$image" && docker tag "$image" "realpage/php:${MAJOR}-${VARIANT}" && docker push "realpage/php:${MAJOR}-${VARIANT}" && docker tag "$image" "realpage/php:${MAJOR}.${MINOR}-${VARIANT}" && docker push "realpage/php:${MAJOR}.${MINOR}-${VARIANT}" && docker tag "$image" "realpage/php:${MAJOR}.${MINOR}.${PATCH}-${VARIANT}" && docker push "realpage/php:${MAJOR}.${MINOR}.${PATCH}-${VARIANT}"
  skip_cleanup: false
  on:
    tags: true
