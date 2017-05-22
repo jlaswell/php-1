@@ -1,22 +1,25 @@
 language: bash
 services: docker
 env:
-  - DISTRO=alpine VARIANT=cli
-  - DISTRO=alpine VARIANT=fpm
-  - DISTRO=debian-jessie VARIANT=cli
-  - DISTRO=debian-jessie VARIANT=fpm
+ - VARIANT=cli
+ - VARIANT=fpm
 install:
-  - git clone https://github.com/docker-library/official-images.git ~/official-images
+ - git clone https://github.com/docker-library/official-images.git ~/official-images
 before_script:
-  - docker -v
-  - image="realpage/php:${DISTRO}${VARIANT:+-$VARIANT}"
-  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+ - docker -v
+ - image="realpage/php:${VARIANT}-latest"
+ - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 script:
-  - docker build -t "$image" "${DISTRO}/${VARIANT:-.}"
-  - ~/official-images/test/run.sh "$image"
-  - docker images
-  # build and push all variations of images
-  - if [[ $TRAVIS_PULL_REQUEST = false && $TRAVIS_BRANCH == 'master' ]]; then bash build.sh ; fi
-notifications:
-  slack:
-    secure: ${SLACK_TOKEN}
+ - docker build -t "$image" -f "${VARIANT}/Dockerfile" .
+ - ~/official-images/test/run.sh "$image"
+ - docker images
+before_deploy:
+ # Extract the version components out of a `v12.34.56` or `12.34.56` version string (only works if this is a semantically versioned tag)
+ - IFS=. read MAJOR MINOR PATCH <<< "${TRAVIS_TAG#v}"
+ - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+deploy:
+ provider: script
+ script: docker push "realpage/php:latest" && docker tag "realpage/php:latest" "realpage/php:${MAJOR}-${VARIANT}" && docker push "realpage/php:${MAJOR}-${VARIANT}" && docker tag "realpage/php:latest" "realpage/php:${MAJOR}.${MINOR}-${VARIANT}" && docker push "realpage/php:${MAJOR}.${MINOR}-${VARIANT}" && docker tag "realpage/php:latest" "realpage/php:${MAJOR}.${MINOR}.${PATCH}-${VARIANT}" && docker push "realpage/php:${MAJOR}.${MINOR}.${PATCH}-${VARIANT}"
+ skip_cleanup: false
+ on:
+   tags: true
