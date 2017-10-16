@@ -1,5 +1,5 @@
 FROM php:7.1.5-fpm-alpine
-MAINTAINER Foundation DevOps foundation-devops@realpage.com
+LABEL maintainer="Foundation DevOps foundation-devops@realpage.com"
 
 ADD install_composer.php /var/www/html/install_composer.php
 

@@ -1,5 +1,5 @@
 FROM php:7.1.5-alpine
-MAINTAINER Foundation DevOps foundation-devops@realpage.com
+LABEL maintainer="Foundation DevOps foundation-devops@realpage.com"
 
 WORKDIR /var/www/html
 
